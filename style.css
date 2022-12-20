@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Work Sans");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito';
+    
+}
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 36px;
+    left: 84px;
+    right: 140px;
+    top: 72px;
+    z-index: 10;
+}
+.NavBar {
+    display: flex;
+    width: 310px;
+    place-content: center space-between;
+    transform: scale(1.2);
+}
+.NavBar__Buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 80px;
+    height: 20px;
+    margin-top: 8px;
+}
+.NavBar__SignUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    width: 111px;
+    height: 36px;
+    color: #156963;
+    text-decoration: none;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: .4s;
+}
+.NavBar__SignIn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    width: 111px;
+    height: 36px;
+    background: #156963;
+    color: #fff;
+    text-decoration: none; 
+}
+.NavBar__SignUp:hover {
+    transition: .4s;
+    background: rgba(0, 0, 0, .1);
+}
+.Main__Image {
+    position: relative;
+    width: 47.9%;
+}
+.Main__Box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 672px;
+    height: 582px;
+    right: 10%;
+    top: 160px;
+    font-family: 'Montserrat';
+}
+.Main__Title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 89px;
+
+    color: #156963;
+}
+.Main__Desc {
+    width: 493px;
+    height: 96px;
+    font-family: 'Montserrat'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #2C1500;
+}
+.Main__Control {
+    position: relative;
+    width: 586px;
+    height: 160px;
+    left: 60%;
+    margin-top: -200px;
+    display: flex;
+    flex-direction: row;
+    transform: scale(1.5);
+}
+.Main__Prev {
+    padding: 24px;
+    width: 320px;
+    height: 160px;
+    color: #156963
+}
+.Main__Next {
+    padding: 24px;
+    width: 320px;
+    height: 160px;
+    background-color: #156963;
+    color: #fff
+}
+.Main__ControlName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    opacity: .5;
+    font-size: 24px;
+}
+.Plant {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: medium;
+}
+.advs {
+    display: flex;
+    margin: 100px;
+    justify-content: space-between;
+}
+.advs__container {
+    max-width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, .1);
+}
+.advs__title {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    color: #156963;
+}
+.advs__desc {
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+}
+.prices {
+    font-family: 'Montserrat';
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.prices__hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: .7;
+}
+.prices__title {
+    font-size: 25px;
+    
+}
+.prices__box {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 14px;
+}
+.prices__container {
+    font-size: 18px;
+}
+.prices__price {
+    font-weight: bold;
+}
+footer {
+    margin: 150px;
+    font-size: 20px;
+    font-family: 'Work Sans';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Info {
+    width: 400px;
+    margin: 40px;
+}
+.CompName {
+    color: #156963;
+    font-weight: bolder;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.FullName {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.title {
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+.input {
+    font-size: 20px;
+    font-family: 'Work Sans';
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #000;
+    border: 1.5px solid rgba(0, 0, 0, .3);
+}
+.button {
+    margin-top: 15px;
+}
+.buttonemail {
+    width: fit-content;
+    color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #156963;
+    cursor: crosshair;
+}
+.buymore {
+    display: flex;
+    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: space-around;
+} 
+.buymore1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.buymore__title {
+    font-family: 'Montserrat';
+    font-size: 42px;
+    font-weight: bold;
+}
+.buymore__desc {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: lighter;
+    opacity: .8;
+}
+.buymore1_img {
+    width: fit-content;
+}
+.VisitShop {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #F3F4F6;
+}
+.VisitShop__Title {
+    font-family: 'Montserrat';
+    width: 90%;
+    font-size: 55px;
+    font-weight: bolder; 
+    margin-bottom: 50px;
+}
+.VisitShop__Main {
+    margin: 90px;
+}
+.VisitShop__Button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 40px 12px 40px;
+    background-color: #156963;
+}
+.VisitShop__Img {
+    width: 52%;
+}
