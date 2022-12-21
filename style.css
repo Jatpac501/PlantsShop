@@ -7,27 +7,24 @@
     box-sizing: border-box;
 }
 body {
+    display: block;
+    max-width: clamp(720px, 1300px, 1920px);
     font-family: 'Nunito';
-    
+    margin: 0 auto;
 }
 header {
-    position: fixed;
+    width: 1300px;
+    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: auto;
-    height: 36px;
-    left: 84px;
-    right: 140px;
-    top: 72px;
-    z-index: 10;
+    z-index: 1;
 }
 .NavBar {
     display: flex;
     width: 310px;
     place-content: center space-between;
-    transform: scale(1.2);
 }
 .NavBar__Buttons {
     display: flex;
@@ -70,34 +67,47 @@ header {
     transition: .4s;
     background: rgba(0, 0, 0, .1);
 }
+.Main {
+    width: 100%;
+    display: flex;
+    margin-bottom: 83px;
+}
 .Main__Image {
+    object-fit: contain;
     position: relative;
-    width: 47.9%;
+    width: 47.5%;
 }
 .Main__Box {
+    font-family: 'Montserrat';
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    justify-self: center;
+    align-self: center;
     padding: 0px;
     gap: 24px;
-    position: absolute;
-    width: 672px;
-    height: 582px;
-    right: 10%;
-    top: 160px;
-    font-family: 'Montserrat';
+    width: 519px;
+    height: 286px;
+}
+.Main__MainBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
 }
 .Main__Title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 89px;
-
+    width: 523px;
+    height: 166px;
+    font-family: Montserrat;
+    font-size: 68px;
+    font-weight: 500;
+    line-height: 83px;
+    letter-spacing: 0em;
+    text-align: left;
     color: #156963;
 }
 .Main__Desc {
-    width: 493px;
+    width: 89.8%;
     height: 96px;
     font-family: 'Montserrat'; 
     font-style: normal;
@@ -107,14 +117,12 @@ header {
     color: #2C1500;
 }
 .Main__Control {
-    position: relative;
-    width: 586px;
+    width: clamp(400px, 586px, 600px);
     height: 160px;
-    left: 60%;
-    margin-top: -200px;
     display: flex;
     flex-direction: row;
-    transform: scale(1.5);
+    align-self: flex-end;
+    justify-items: flex-end;
 }
 .Main__Prev {
     padding: 24px;
@@ -149,12 +157,13 @@ header {
 }
 .advs {
     display: flex;
-    margin: 100px;
+    margin-bottom: 83px;
+    gap: 10px;
     justify-content: space-between;
 }
 .advs__container {
     max-width: 350px;
-    height: 200px;
+    max-height: 300px;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -178,9 +187,9 @@ header {
     font-weight: 400;
 }
 .prices {
+    width: 100%;
     font-family: 'Montserrat';
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-bottom: 83px;
 }
 .prices__hr {
     margin-top: 30px;
@@ -192,13 +201,10 @@ header {
     
 }
 .prices__box {
-    border-radius: 16px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     text-align: center;
-    padding: 14px;
+    flex-wrap: wrap;
 }
 .prices__container {
     font-size: 18px;
@@ -207,13 +213,14 @@ header {
     font-weight: bold;
 }
 footer {
-    margin: 150px;
+    border-top: 2px solid rgba(21, 105, 99, .1) ;
     font-size: 20px;
     font-family: 'Work Sans';
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding: 24px;
 }
 .Info {
     width: 400px;
@@ -255,16 +262,17 @@ footer {
 }
 .buymore {
     display: flex;
-    margin: 100px;
-    margin-left: 200px;
-    margin-right: 200px;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 83px;
 } 
 .buymore1 {
-    width: 30%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
+    padding-right: 40px;
+}
+.buymore2 {
+    display: block;
 }
 .buymore__title {
     font-family: 'Montserrat';
@@ -278,15 +286,16 @@ footer {
     opacity: .8;
 }
 .buymore1_img {
-    width: fit-content;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 .VisitShop {
-    height: 500px;
+    margin-bottom: 120px;
+    height: 360px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 100px;
-    margin-right: 100px;
     background-color: #F3F4F6;
 }
 .VisitShop__Title {
